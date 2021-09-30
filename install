@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+sudo echo "downloading driver.."
+wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz -q 
+echo "extract driver..."
+tar zxvf geckodriver-v0.24.0-linux64.tar.gz > geckodriver  
+echo "installing driver..."
+sudo cp geckodriver /usr/sbin/geckodriver 
+echo "requirement installing..."
+pip3 install selenium requests 
+rm geckodriver-v0.24.0-linux64.tar.gz
+rm geckodriver 
+echo "done"
+python3 doxtractor.py
