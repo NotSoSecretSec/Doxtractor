@@ -1,1 +1,3 @@
 # Doxtractor
+
+`bash install`
