@@ -1,4 +1,3 @@
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -207,4 +206,3 @@ if __name__ == "__main__":
 			option1()
 		else:
 			print('Wrong choice !')
-	
